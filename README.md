@@ -1,2 +1,0 @@
-# airtribe
-airtribe exercises
