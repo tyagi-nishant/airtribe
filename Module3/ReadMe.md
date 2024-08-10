@@ -13,5 +13,4 @@ Go ahead! And make something special!
 ## Project Structure
 ```plaintext
 ├── index.html
-├── styles.css
 ├── README.md
