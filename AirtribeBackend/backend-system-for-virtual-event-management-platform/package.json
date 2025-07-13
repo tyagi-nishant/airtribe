@@ -1,0 +1,18 @@
+{
+  "name": "backend-system-for-virtual-event-management-platform",
+  "version": "1.0.0",
+  "description": "Brief\r Develop a backend system for a virtual event management platform focusing on user registration, event scheduling, and participant management, all managed through in-memory data structures (if you are comfortable with databases, you can use any NoSQL or SQL database).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "nodemailer": "^7.0.5"
+  }
+}
