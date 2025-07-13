@@ -20,12 +20,5 @@ app.listen(port, () => {
 let users = []; // Array for user data
 let events = []; // Array for event data
 
-// NEW/UPDATED: Correct requires (add/replace after existing requires)
-const authRoutes = require('./routes/authRoutes')(users); // Pass users array
-const authMiddleware = require('./utils/authMiddleware');
-
-// NEW/UPDATED: Mount auth routes (add/replace before app.listen if not already there)
-app.use('/auth', authRoutes); // Routes under /auth/register and /auth/login
-
 // Export app for testing (if needed later)
 module.exports = app;
