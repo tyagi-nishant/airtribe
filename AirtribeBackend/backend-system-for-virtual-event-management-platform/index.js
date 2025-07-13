@@ -27,5 +27,11 @@ const authMiddleware = require('./utils/authMiddleware');
 // NEW/UPDATED: Mount auth routes (add/replace before app.listen if not already there)
 app.use('/auth', authRoutes); // Routes under /auth/register and /auth/login
 
+// NEW: Add after authRoutes require
+const eventRoutes = require('./routes/eventRoutes')(events);
+
+// NEW: Mount event routes with auth middleware (add before app.listen)
+app.use('/events', authMiddleware, eventRoutes);
+
 // Export app for testing (if needed later)
 module.exports = app;
